@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Пгу\\C#\\OOP-lb3\\Lb2\\Lb2.csproj": {}
+    "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj": {}
   },
   "projects": {
-    "D:\\Пгу\\C#\\OOP-lb3\\Lb2\\Lb2.csproj": {
+    "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Пгу\\C#\\OOP-lb3\\Lb2\\Lb2.csproj",
+        "projectUniqueName": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj",
         "projectName": "Lb2",
-        "projectPath": "D:\\Пгу\\C#\\OOP-lb3\\Lb2\\Lb2.csproj",
+        "projectPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj",
         "packagesPath": "C:\\Users\\Мария\\.nuget\\packages\\",
-        "outputPath": "D:\\Пгу\\C#\\OOP-lb3\\Lb2\\obj\\",
+        "outputPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

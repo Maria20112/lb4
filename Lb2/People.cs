@@ -11,7 +11,7 @@ namespace Lb2
     /// <summary>
     /// Класс, содержащий коллекцию людей
     /// </summary>
-    public class People
+    public class People : IStack
     {
         /// <summary>
         /// стек
@@ -21,22 +21,22 @@ namespace Lb2
         /// <summary>
         /// делегат (добавление элемента)
         /// </summary>
-        public delegate void PersonAdd();
+        //public delegate void PersonAdd();
 
         /// <summary>
         /// делегат (удаление элемента)
         /// </summary>
-        public delegate void PersonRemove();
+        //public delegate void PersonRemove();
 
         /// <summary>
         /// событие (добавление элемента)
         /// </summary>
-        public event PersonAdd? NotifyAdd;
+        //public event PersonAdd? NotifyAdd;
 
         /// <summary>
         /// событие (удаление элемента)
         /// </summary>
-        public event PersonRemove? NotifyRemove;
+        //public event PersonRemove? NotifyRemove;
 
         ///// <summary>
         ///// возвращает стек
@@ -89,7 +89,7 @@ namespace Lb2
             try
             {
                 peopleStack.Push(person);
-                NotifyAdd?.Invoke();
+                //NotifyAdd?.Invoke();
             }
             catch (Exception) {
                 Console.WriteLine("Error: Add(Person person) in People.cs");
@@ -155,12 +155,17 @@ namespace Lb2
             }
             try
             {
-                NotifyRemove?.Invoke();
+                //NotifyRemove?.Invoke();
             }
             catch (Exception)
             {
                 Console.WriteLine("Error: Remove(Person person) in People.cs");
             }
+        }
+
+        public void Clear()
+        {
+            peopleStack.Clear();
         }
     }
 }

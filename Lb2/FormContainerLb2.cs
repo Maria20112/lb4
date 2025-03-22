@@ -8,7 +8,7 @@ namespace Lb2
         /// <summary>
         /// Объект класса People, хранит всех созданных людей
         /// </summary>
-        People people = new People();
+        PeopleProxy people = new PeopleProxy();
 
         ///// <summary>
         ///// Обработчик события, выводит данные всех людей
@@ -214,6 +214,11 @@ namespace Lb2
             {
                 people.Add(person_clone);
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

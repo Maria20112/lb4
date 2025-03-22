@@ -52,6 +52,7 @@
             label12 = new Label();
             number = new NumericUpDown();
             panel3 = new Panel();
+            cloneButton = new Button();
             data = new Label();
             deleteButton = new Button();
             groupBox2 = new GroupBox();
@@ -62,7 +63,6 @@
             addition = new ColumnHeader();
             sequentialChoice = new ColumnHeader();
             randomChoice = new ColumnHeader();
-            cloneButton = new Button();
             ((System.ComponentModel.ISupportInitialize)year_of_birth).BeginInit();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -266,6 +266,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1059, 91);
             panel2.TabIndex = 61;
+            panel2.Paint += panel2_Paint;
             // 
             // label1
             // 
@@ -276,7 +277,7 @@
             label1.Name = "label1";
             label1.Size = new Size(226, 60);
             label1.TabIndex = 62;
-            label1.Text = "Лабораторная работа №2 \r\n23ВП1\r\nБояринова М.Г., Бычкова Н.Р.\r\n";
+            label1.Text = "Лабораторная работа №4 \r\n23ВП1\r\nБояринова М.Г., Бычкова Н.Р.\r\n";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // label12
@@ -306,6 +307,17 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(291, 165);
             panel3.TabIndex = 65;
+            // 
+            // cloneButton
+            // 
+            cloneButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            cloneButton.Location = new Point(28, 87);
+            cloneButton.Name = "cloneButton";
+            cloneButton.Size = new Size(235, 29);
+            cloneButton.TabIndex = 68;
+            cloneButton.Text = "Клонировать";
+            cloneButton.UseVisualStyleBackColor = true;
+            cloneButton.Click += cloneButton_Click;
             // 
             // data
             // 
@@ -397,17 +409,6 @@
             // 
             randomChoice.Text = "Случайный выбор";
             // 
-            // cloneButton
-            // 
-            cloneButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            cloneButton.Location = new Point(28, 87);
-            cloneButton.Name = "cloneButton";
-            cloneButton.Size = new Size(235, 29);
-            cloneButton.TabIndex = 68;
-            cloneButton.Text = "Клонировать";
-            cloneButton.UseVisualStyleBackColor = true;
-            cloneButton.Click += cloneButton_Click;
-            // 
             // FormContainerLb2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -420,7 +421,7 @@
             Controls.Add(panel1);
             MinimumSize = new Size(350, 799);
             Name = "FormContainerLb2";
-            Text = "Lb2";
+            Text = "Lb4";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)year_of_birth).EndInit();
             panel1.ResumeLayout(false);
