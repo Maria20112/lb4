@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj": {}
+    "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj": {
+    "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj",
-        "projectName": "Lb2.Tests",
-        "projectPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj",
-        "packagesPath": "C:\\Users\\Мария\\.nuget\\packages\\",
-        "outputPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2.Tests\\obj\\",
+        "projectUniqueName": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj",
+        "projectName": "Lb2.Test",
+        "projectPath": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2.Tests\\Lb2.Tests.csproj",
+        "packagesPath": "C:\\Users\\Nadezhda_N\\.nuget\\packages\\",
+        "outputPath": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Мария\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nadezhda_N\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj": {
-                "projectPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj"
+              "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2\\Lb2.csproj": {
+                "projectPath": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2\\Lb2.csproj"
               }
             }
           }
@@ -47,7 +48,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -86,24 +88,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj": {
+    "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2\\Lb2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj",
+        "projectUniqueName": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2\\Lb2.csproj",
         "projectName": "Lb2",
-        "projectPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\Lb2.csproj",
-        "packagesPath": "C:\\Users\\Мария\\.nuget\\packages\\",
-        "outputPath": "D:\\Пгу\\C#\\OOP-lb4\\lb4\\Lb2\\obj\\",
+        "projectPath": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2\\Lb2.csproj",
+        "packagesPath": "C:\\Users\\Nadezhda_N\\.nuget\\packages\\",
+        "outputPath": "C:\\Nadezhda\\Study\\Labs\\CS\\Lb4\\lb4\\Lb2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Мария\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nadezhda_N\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,6 +114,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -129,7 +132,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -153,7 +157,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

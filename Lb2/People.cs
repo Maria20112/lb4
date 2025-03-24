@@ -19,6 +19,15 @@ namespace Lb2
         private Stack<Person> peopleStack;
 
         /// <summary>
+        /// Имитация выгрузки из внешнего ресурса
+        /// </summary>
+        /// <returns></returns>
+        public Stack<Person> getStack()
+        {
+            return peopleStack;
+        }
+
+        /// <summary>
         /// делегат (добавление элемента)
         /// </summary>
         //public delegate void PersonAdd();
@@ -163,6 +172,9 @@ namespace Lb2
             }
         }
 
+        /// <summary>
+        /// Очищает список 
+        /// </summary>
         public void Clear()
         {
             peopleStack.Clear();

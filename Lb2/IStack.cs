@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lb2
 {
-    internal interface IStack
+    public interface IStack
     {
         public void Add(Person person);
         public Person? Find(int id);

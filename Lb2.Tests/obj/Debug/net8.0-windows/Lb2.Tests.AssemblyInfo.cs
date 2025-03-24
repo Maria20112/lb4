@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Lb2.Tests")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Lb2.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7dcacacfed631166b511d0622f2ea71c13d44f4")]
-[assembly: System.Reflection.AssemblyProductAttribute("Lb2.Tests")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Lb2.Tests")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c054f7e18136d4629249ff36ec0027c9f5958db")]
+[assembly: System.Reflection.AssemblyProductAttribute("Lb2.Test")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Lb2.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

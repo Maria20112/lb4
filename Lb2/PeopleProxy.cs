@@ -2,23 +2,52 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("Lb2.Test")]
+
 namespace Lb2
 {
-    internal class PeopleProxy : IStack
+    public class PeopleProxy : IStack
     {
-        static Stack<Person> stackProxy = new Stack<Person>();
-        static People people = new People();
+        /// <summary>
+        /// Прокси-стек
+        /// </summary>
+        private Stack<Person> stackProxy;
+        /// <summary>
+        /// Реальный объект
+        /// </summary>
+        private static People people = new People();
 
         /// <summary>
-        /// делегат (добавление элемента)
+        /// Метод для тестового доступа. Возвращает стек реального объекта
+        /// </summary>
+        /// <returns>Стек реального объекта</returns>
+        internal static People GetPeople()
+        {
+            return people;
+        }
+
+        /// <summary>
+        /// конструктор по умолчанию. При создании нового объекта в прокси копируется содержимое реального объекта
+        /// </summary>
+        public PeopleProxy()
+        {
+            stackProxy = new Stack<Person>();
+            downloadChanges();
+        }
+
+        /// <summary>
+        /// делегат(добавление элемента)
         /// </summary>
         public delegate void PersonAdd();
 
         /// <summary>
-        /// делегат (удаление элемента)
+        /// делегат(удаление элемента)
         /// </summary>
         public delegate void PersonRemove();
 
@@ -32,11 +61,15 @@ namespace Lb2
         /// </summary>
         public event PersonRemove? NotifyRemove;
 
+        /// <summary>
+        /// добавляет нового человека в стек
+        /// </summary>
+        /// <param name="person">новый человек</param>
         public void Add(Person person)
         {
             try
             {
-               stackProxy.Push(person);
+                stackProxy.Push(person);
                 NotifyAdd?.Invoke();
             }
             catch (Exception)
@@ -45,6 +78,10 @@ namespace Lb2
             }
         }
 
+        /// <summary>
+        /// удаляет человека из стека по номеру
+        /// </summary>
+        /// <param name="id">Номер человека</param>
         public void Remove(int id)
         {
             Stack<Person> helpStack = new Stack<Person>();
@@ -72,6 +109,11 @@ namespace Lb2
             }
         }
 
+        /// <summary>
+        /// Ищет объект в стеке по индексу
+        /// </summary>
+        /// <param name="id">индекс искомого объекта</param>
+        /// <returns>если объект найден, возвращает объект, иначе - null</returns>
         public Person? Find(int id)
         {
             Stack<Person> helpStack = new Stack<Person>();
@@ -92,6 +134,30 @@ namespace Lb2
                 stackProxy.Push(helpStack.Pop());
             }
             return curr;
+        }
+
+        /// <summary>
+        /// Загружает версию стека прокси в реальный стек
+        /// </summary>
+        public void uploadChanges()
+        {
+            people.Clear();
+            foreach (Person i in stackProxy)
+            {
+                people.Add(i);
+            }
+        }
+
+        /// <summary>
+        /// Загружает версию реального стека в прокси
+        /// </summary>
+        public void downloadChanges()
+        {
+            stackProxy.Clear();
+            foreach (Person i in people.getStack())
+            {
+                stackProxy.Push(i);
+            }
         }
 
         /// <summary>
@@ -127,15 +193,34 @@ namespace Lb2
             return dataTable;
         }
 
+        ///// <summary>
+        ///// Имитатор деструктора для демонстрации работы паттерна
+        ///// </summary>
+        //public void deletePeopleProxy()
+        //{
+        //    uploadChanges();
+        //    stackProxy.Clear();
+        //    ////people.Clear();
+        //    //while (stackProxy.Count > 0)
+        //    //{
+        //    //    Person person = stackProxy.Pop();
+        //    //    people.Add(person);
+        //    //}
+        //}
 
+        /// <summary>
+        /// Деструктор прокси
+        /// </summary>
         ~PeopleProxy()
         {
-            people.Clear();
-            while (stackProxy.Count > 0)
-            {
-                Person person = stackProxy.Pop();
-                people.Add(person);
-            }
+            uploadChanges();
+            stackProxy.Clear();
+            //people.Clear();
+            //while (stackProxy.Count > 0)
+            //{
+            //    Person person = stackProxy.Pop();
+            //    people.Add(person);
+            //}
         }
     }
 }
